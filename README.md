@@ -1,73 +1,42 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# NestJS Environment Variables Setup
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Este proyecto es un ejemplo de cómo manejar variables de entorno en un proyecto NestJS utilizando `dotenv`. También demuestra cómo devolver información sobre estas variables en un formato HTML utilizando un endpoint específico.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Instalación
 
-## Description
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta el directorio del proyecto.
+3. Instala las dependencias con el comando `npm install`.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Configuración
 
-## Installation
+1. Crea un archivo `.env` en la raíz del proyecto.
+2. Define las variables de entorno requeridas en el archivo `.env`, por ejemplo:
 
-```bash
-$ npm install
-```
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=123456
+DB_NAME=database
+DB_PORT=3306
 
-## Running the app
 
-```bash
-# development
-$ npm run start
+## Uso
 
-# watch mode
-$ npm run start:dev
+- Inicia el servidor de desarrollo con el comando `npm run start`.
+- Abre tu navegador y navega a `http://localhost:3000` para ver la configuración de las variables de entorno en un formato HTML.
 
-# production mode
-$ npm run start:prod
-```
+## Estructura del Proyecto
 
-## Test
+- `src/`: Contiene los archivos fuente del proyecto.
+- `.env`: Archivo para definir las variables de entorno.
+- `package.json`: Archivo de configuración de npm con las dependencias y scripts del proyecto.
 
-```bash
-# unit tests
-$ npm run test
+## Tecnologías Utilizadas
 
-# e2e tests
-$ npm run test:e2e
+- [NestJS](https://nestjs.com/): Framework de Node.js para construir aplicaciones eficientes y escalables en el lado del servidor.
+- [dotenv](https://www.npmjs.com/package/dotenv): Cargador de variables de entorno.
 
-# test coverage
-$ npm run test:cov
-```
+## Licencia
 
-## Support
+Este proyecto está bajo la Licencia MIT.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
